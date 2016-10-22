@@ -22,7 +22,7 @@ class Wunderlist extends AbstractProvider
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return '';
+        return 'https://a.wunderlist.com/api/v1/use';
     }
 
     protected function getDefaultScopes()
@@ -50,7 +50,9 @@ class Wunderlist extends AbstractProvider
 
     protected function createResourceOwner(array $response, AccessToken $token)
     {
-        return null;
+        $user = new WunderlistUser($response);
+
+        return $user;
     }
 
 }
