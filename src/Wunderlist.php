@@ -22,7 +22,7 @@ class Wunderlist extends AbstractProvider
 
     public function getResourceOwnerDetailsUrl(AccessToken $token)
     {
-        return 'https://a.wunderlist.com/api/v1/use';
+        return 'https://a.wunderlist.com/api/v1/user';
     }
 
     protected function getDefaultScopes()
