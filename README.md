@@ -45,6 +45,6 @@ if (!isset($_GET['code'])) {
     ]);
 
     // Use this to interact with an API on the users behalf
-    echo $token->accessToken;
+    echo $token->getToken();
 }
 ```
