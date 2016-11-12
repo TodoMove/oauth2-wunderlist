@@ -30,7 +30,8 @@ class Wunderlist extends AbstractProvider
         return [];
     }
 
-    protected function getAuthorizationHeaders($token = null) {
+    protected function getAuthorizationHeaders($token = null)
+    {
         return [
             'X-Access-Token' => $token,
             'X-Client-ID' => $this->clientId,
@@ -54,5 +55,4 @@ class Wunderlist extends AbstractProvider
 
         return $user;
     }
-
 }

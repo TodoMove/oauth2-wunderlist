@@ -2,7 +2,6 @@
 
 namespace TodoMove\OAuth2\Client\Provider;
 
-
 use League\OAuth2\Client\Provider\ResourceOwnerInterface;
 
 class WunderlistUser implements ResourceOwnerInterface
